@@ -14,13 +14,25 @@
         android:theme="@style/Theme.AndroidUI"
         tools:targetApi="31">
         <activity
-            android:name=".business.TimeStampActivity"
+            android:name=".main.ui.TimingActivity"
             android:exported="false" />
         <activity
-            android:name=".UIActivity"
+            android:name=".main.ui.DialogActivity"
             android:exported="false" />
         <activity
-            android:name=".BusinessLogicActivity"
+            android:name=".main.ui.MediaPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.ui.RadioButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.business.TimeStampActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.UIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.BusinessLogicActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

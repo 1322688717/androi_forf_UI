@@ -2,12 +2,13 @@ package com.example.androidui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.androidui.databinding.ActivityMainBinding;
+import com.example.androidui.main.BusinessLogicActivity;
+import com.example.androidui.main.UIActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         binding.btnBusinessLogic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,BusinessLogicActivity.class);
+                Intent intent = new Intent(MainActivity.this, BusinessLogicActivity.class);
                 startActivity(intent);
             }
         });
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         binding.btnUi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,UIActivity.class);
+                Intent intent = new Intent(MainActivity.this, UIActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,10 +1,9 @@
-package com.example.androidui.business;
+package com.example.androidui.main.business;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.androidui.R;
 import com.example.androidui.databinding.ActivityTimeStampBinding;
 
 import java.text.SimpleDateFormat;

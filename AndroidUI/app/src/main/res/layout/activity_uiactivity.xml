@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UIActivity">
+    android:orientation="vertical"
+    tools:context=".main.UIActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_radiobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RadioButton使用"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="音频工具MediaPlayer的基本使用"
+        />
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialog"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn_timing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="计数器" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！"
+            />
+    </ScrollView>
+
+
+</LinearLayout>
