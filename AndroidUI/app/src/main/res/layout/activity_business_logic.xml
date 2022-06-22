@@ -14,10 +14,10 @@
         android:text="时间戳转换" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:text="sp的使用"
         android:textAllCaps="false"/>
 
     <Button

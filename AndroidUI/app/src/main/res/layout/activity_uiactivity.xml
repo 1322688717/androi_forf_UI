@@ -37,17 +37,37 @@
         android:layout_height="wrap_content"
         android:text="计数器" />
 
-    <ScrollView
+    <Button
+        android:id="@+id/btn_countdown"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="wrap_content"
+        android:text="倒计时" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！你好中国，中国共产党万岁！"
-            />
-    </ScrollView>
+    <Button
+        android:id="@+id/btn_get_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取本地当前时间" />
+
+    <Button
+        android:id="@+id/btn_rc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rc的使用" />
+
+    <Button
+        android:id="@+id/btn_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ScrollView自动滚动"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索框" />
 
 
 </LinearLayout>
