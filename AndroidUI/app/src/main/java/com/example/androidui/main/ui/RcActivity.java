@@ -1,15 +1,22 @@
 package com.example.androidui.main.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
+import android.view.Gravity;
 
+import com.example.androidui.R;
 import com.example.androidui.databinding.ActivityRcBinding;
 import com.example.androidui.main.adapter.RcAdapter;
+import com.example.androidui.main.adapter.RcAdapter2;
 import com.example.androidui.main.bean.ListOrder;
 import com.example.androidui.main.https.OKHttp;
 import com.example.androidui.main.listener.IGetDataListener;
@@ -28,6 +35,7 @@ public class RcActivity extends AppCompatActivity {
     ActivityRcBinding binding;
     List<ListOrder.DataDTO.ListDTO> list;
     Handler handler = new Handler(Looper.getMainLooper());
+    List photo = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +45,39 @@ public class RcActivity extends AppCompatActivity {
 
         initData();
 
+        initdata2();
 
+    }
+
+    @SuppressLint("UseCompatLoadingForDrawables")
+    private void initdata2() {
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        photo.add(getDrawable(R.drawable.picture));
+        initrc2();
+    }
+
+    private void initrc2() {
+       // LinearLayoutManager linearLayoutManager = new LinearLayoutManager(RcActivity.this,LinearLayoutManager.VERTICAL,false);
+
+        binding.rcHorizontal.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.HORIZONTAL));
+        RcAdapter2 adapter2 =  new RcAdapter2(RcActivity.this,photo);
+        binding.rcHorizontal.setAdapter(adapter2);
     }
 
     private void initData() {
@@ -78,5 +118,7 @@ public class RcActivity extends AppCompatActivity {
         binding.rcList.setLayoutManager(linearLayoutManager);
         RcAdapter adapter =  new RcAdapter(RcActivity.this,list);
         binding.rcList.setAdapter(adapter);
+        binding.rcList.addItemDecoration(new DividerItemDecoration(RcActivity.this, DividerItemDecoration.VERTICAL));
+        binding.rcList.setItemAnimator(new DefaultItemAnimator());
     }
 }

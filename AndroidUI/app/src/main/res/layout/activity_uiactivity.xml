@@ -7,67 +7,102 @@
     android:orientation="vertical"
     tools:context=".main.UIActivity">
 
-    <Button
-        android:id="@+id/btn_radiobutton"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RadioButton使用"
-        android:textAllCaps="false"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="39dp" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="音频工具MediaPlayer的基本使用"
-        />
+            <Button
+                android:id="@+id/btn_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton使用"
+                android:textAllCaps="false"
+                tools:layout_editor_absoluteX="180dp"
+                tools:layout_editor_absoluteY="39dp" />
 
-    <Button
-        android:id="@+id/btn_dialog"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Dialog"
-        android:textAllCaps="false"
-        />
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="音频工具MediaPlayer的基本使用"
+                />
 
-    <Button
-        android:id="@+id/btn_timing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="计数器" />
+            <Button
+                android:id="@+id/btn_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dialog"
+                android:textAllCaps="false"
+                />
 
-    <Button
-        android:id="@+id/btn_countdown"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="倒计时" />
+            <Button
+                android:id="@+id/btn_timing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="计数器" />
 
-    <Button
-        android:id="@+id/btn_get_time"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="获取本地当前时间" />
+            <Button
+                android:id="@+id/btn_countdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="倒计时" />
 
-    <Button
-        android:id="@+id/btn_rc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="rc的使用" />
+            <Button
+                android:id="@+id/btn_get_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取本地当前时间" />
 
-    <Button
-        android:id="@+id/btn_ScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ScrollView自动滚动"
-        android:textAllCaps="false"
-        />
+            <Button
+                android:id="@+id/btn_rc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="rc的使用" />
 
-    <Button
-        android:id="@+id/btn_edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="搜索框" />
+            <Button
+                android:id="@+id/btn_ScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ScrollView自动滚动"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="搜索框" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/multilingual" />
+
+            <Button
+                android:id="@+id/btn_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="沉浸式状态栏" />
+
+            <Button
+                android:id="@+id/btn_themes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="主题" />
+
+            <Button
+                android:id="@+id/btn_DrawerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="侧滑导航" />
 
 
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

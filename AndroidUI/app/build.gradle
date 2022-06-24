@@ -42,4 +42,8 @@ dependencies {
 
     implementation 'com.squareup.okhttp3:okhttp:3.3.1' //OKhttp
     implementation 'com.google.code.gson:gson:2.8.9' //Gson
+
+
+    //状态栏bar
+    implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
 }

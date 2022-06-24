@@ -51,7 +51,7 @@ public class RcAdapter extends RecyclerView.Adapter<RcAdapter.ViewHolder> implem
     @Override
     public Filter getFilter() {
         if (filter == null){
-            filter = new MyFilter();
+            filter = new MyFilter(list);
         }
         return filter;
     }
@@ -65,9 +65,9 @@ public class RcAdapter extends RecyclerView.Adapter<RcAdapter.ViewHolder> implem
 
     public class MyFilter extends Filter{
 
-        private List<String> original = new ArrayList<String>();
+        private List<ListOrder.DataDTO.ListDTO> original ;
 
-        public MyFilter(List<String> list) {
+        public MyFilter(List<ListOrder.DataDTO.ListDTO> list) {
             this.original = list;
         }
 
@@ -75,44 +75,48 @@ public class RcAdapter extends RecyclerView.Adapter<RcAdapter.ViewHolder> implem
         @Override
         protected FilterResults performFiltering(CharSequence charSequence) {
             // 创建FilterResults对象
-            FilterResults results = new FilterResults();
-
-            /**
-             * 没有搜索内容的话就还是给results赋值原始数据的值和大小
-             * 执行了搜索的话，根据搜索的规则过滤即可，最后把过滤后的数据的值和大小赋值给results
-             *
-             */
-            if(TextUtils.isEmpty(charSequence)){
-                results.values = original;
-                results.count = original.size();
-            }else {
-                // 创建集合保存过滤后的数据
-                List<String> mList = new ArrayList<String>();
-                // 遍历原始数据集合，根据搜索的规则过滤数据
-                for(String s: original){
-                    // 这里就是过滤规则的具体实现【规则有很多，大家可以自己决定怎么实现】
-                    if(s.trim().toLowerCase().contains(charSequence.toString().trim().toLowerCase())){
-                        // 规则匹配的话就往集合中添加该数据
-                        mList.add(s);
-                    }
-                }
-                results.values = mList;
-                results.count = mList.size();
-            }
-
-            // 返回FilterResults对象
-
+//            FilterResults results = new FilterResults();
+//
+//            /**
+//             * 没有搜索内容的话就还是给results赋值原始数据的值和大小
+//             * 执行了搜索的话，根据搜索的规则过滤即可，最后把过滤后的数据的值和大小赋值给results
+//             *
+//             */
+//            if(TextUtils.isEmpty(charSequence)){
+//                results.values = original;
+//                results.count = original.size();
+//            }else {
+//                // 创建集合保存过滤后的数据
+//                List<String> mList = new ArrayList<String>();
+//                // 遍历原始数据集合，根据搜索的规则过滤数据
+//                for(String s: original){
+//                    // 这里就是过滤规则的具体实现【规则有很多，大家可以自己决定怎么实现】
+//                    if(s.trim().toLowerCase().contains(charSequence.toString().trim().toLowerCase())){
+//                        // 规则匹配的话就往集合中添加该数据
+//                        mList.add(s);
+//                    }
+//                }
+//                results.values = mList;
+//                results.count = mList.size();
+//            }
+//
+//            // 返回FilterResults对象
+//            return results;
+            return null;
         }
 
         @Override
-        protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
-            list = (List<String>) filterResults.values;
-            // 如果接口对象不为空，那么调用接口中的方法获取过滤后的数据，具体的实现在new这个接口的时候重写的方法里执行
-            if(listener != null){
-                listener.getFilterData(list);
-            }
-            // 刷新数据源显示
-            notifyDataSetChanged();
+        protected void publishResults(CharSequence constraint,
+                                      FilterResults results) {
+//            // 获取过滤后的数据
+//            list = (List<ListOrder.DataDTO.ListDTO>) results.values;
+//            // 如果接口对象不为空，那么调用接口中的方法获取过滤后的数据，具体的实现在new这个接口的时候重写的方法里执行
+//            if(listener != null){
+//                listener.getFilterData(list);
+//            }
+//            // 刷新数据源显示
+//            notifyDataSetChanged();
         }
+
     }
 }

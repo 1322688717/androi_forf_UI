@@ -7,13 +7,16 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.androidui.databinding.ActivityUiactivityBinding;
+import com.example.androidui.main.ui.BarActivity;
 import com.example.androidui.main.ui.CountdownActivity;
 import com.example.androidui.main.ui.DialogActivity;
+import com.example.androidui.main.ui.DrawerLayoutActivity;
 import com.example.androidui.main.ui.MediaPlayerActivity;
 import com.example.androidui.main.ui.RadioButtonActivity;
 import com.example.androidui.main.ui.RcActivity;
 import com.example.androidui.main.ui.ScrollviewActivity;
 import com.example.androidui.main.ui.SearchActivity;
+import com.example.androidui.main.ui.ThemesActivity;
 import com.example.androidui.main.ui.TimingActivity;
 
 import java.text.SimpleDateFormat;
@@ -40,6 +43,24 @@ public class UIActivity extends AppCompatActivity {
         binding.btnScrollView.setOnClickListener(view -> btnScrollView());
         binding.btnCountdown.setOnClickListener(view -> btnCountdown());
         binding.btnEdit.setOnClickListener(view -> btnEdit());
+        binding.btnBar.setOnClickListener(view ->btnBar());
+        binding.btnThemes.setOnClickListener(view -> btnThemes());
+        binding.btnDrawerLayout.setOnClickListener(view -> btnDrawerLayout());
+    }
+
+    private void btnDrawerLayout() {
+        Intent intent = new Intent(UIActivity.this, DrawerLayoutActivity.class);
+        startActivity(intent);
+    }
+
+    private void btnThemes() {
+        Intent intent = new Intent(UIActivity.this, ThemesActivity.class);
+        startActivity(intent);
+    }
+
+    private void btnBar() {
+        Intent intent = new Intent(UIActivity.this, BarActivity.class);
+        startActivity(intent);
     }
 
     private void btnEdit() {

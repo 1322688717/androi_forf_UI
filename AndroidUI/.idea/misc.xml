@@ -3,11 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/drawable-en-rUS/hhh.xml" value="0.4785" />
+        <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/drawable-en-rUS/ll.xml" value="0.4785" />
+        <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/drawable-ja-rJP/drawable_ja.xml" value="0.4785" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/drawable-v24/bg_shape_search.xml" value="0.4785" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/drawable/member_item.xml" value="0.4785" />
+        <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_bar.xml" value="0.4506199230440359" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_business_logic.xml" value="0.5390625" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_countdown.xml" value="0.44249679350149634" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_dialog.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_drawer_layout.xml" value="0.4506199230440359" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_main.xml" value="0.5407608695652174" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_media_player.xml" value="0.5536458333333333" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_radio_button.xml" value="0.5536458333333333" />
@@ -15,11 +20,13 @@
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_scrollview.xml" value="0.45446772124839674" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_search.xml" value="0.45446772124839674" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_spactivity.xml" value="0.45446772124839674" />
+        <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_themes.xml" value="0.4506199230440359" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_time_stamp.xml" value="0.5390625" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_timing.xml" value="0.33" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_uiactivity.xml" value="0.5390625" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/dialog_1.xml" value="0.5536458333333333" />
         <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/purchase_item.xml" value="0.45361265498076103" />
+        <entry key="..\:/Users/Administrator/Desktop/AndroidStudy/androi_forf_UI/AndroidUI/app/src/main/res/layout/recycler2_item.xml" value="0.44976485677640016" />
       </map>
     </option>
   </component>
