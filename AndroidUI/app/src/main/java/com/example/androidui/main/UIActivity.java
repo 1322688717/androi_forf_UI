@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.androidui.databinding.ActivityUiactivityBinding;
+import com.example.androidui.main.ui.BannerActivity;
 import com.example.androidui.main.ui.BarActivity;
 import com.example.androidui.main.ui.CountdownActivity;
 import com.example.androidui.main.ui.DialogActivity;
@@ -18,6 +19,7 @@ import com.example.androidui.main.ui.ScrollviewActivity;
 import com.example.androidui.main.ui.SearchActivity;
 import com.example.androidui.main.ui.ThemesActivity;
 import com.example.androidui.main.ui.TimingActivity;
+import com.example.androidui.main.ui.TwoRcActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -46,6 +48,18 @@ public class UIActivity extends AppCompatActivity {
         binding.btnBar.setOnClickListener(view ->btnBar());
         binding.btnThemes.setOnClickListener(view -> btnThemes());
         binding.btnDrawerLayout.setOnClickListener(view -> btnDrawerLayout());
+        binding.btnBanner.setOnClickListener(view -> btnBanner());
+        binding.btnTwoRc.setOnClickListener(view -> btnTwoRc());
+    }
+
+    private void btnTwoRc() {
+        Intent intent = new Intent(UIActivity.this, TwoRcActivity.class);
+        startActivity(intent);
+    }
+
+    private void btnBanner() {
+        Intent intent = new Intent(UIActivity.this, BannerActivity.class);
+        startActivity(intent);
     }
 
     private void btnDrawerLayout() {

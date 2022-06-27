@@ -46,4 +46,7 @@ dependencies {
 
     //状态栏bar
     implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
+    //轮播图
+    implementation 'io.github.youth5201314:banner:2.2.2'
+
 }
