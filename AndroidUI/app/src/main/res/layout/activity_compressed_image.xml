@@ -5,30 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".main.BusinessLogicActivity">
+    tools:context=".main.business.CompressedImageActivity">
 
     <Button
-        android:id="@+id/btn_time_stamp"
+        android:id="@+id/btn_camera"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="时间戳转换" />
+        android:text="拍照"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="109dp" />
 
     <Button
-        android:id="@+id/btn_sp"
+        android:id="@+id/btn_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sp的使用"
-        android:textAllCaps="false"/>
+        android:text="相册" />
 
     <Button
-        android:id="@+id/btn_compressed_image"
+        android:id="@+id/btn_open_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="选取本地图片" />
+        android:text="打开相册" />
 
-    <Button
-        android:id="@+id/button4"
+    <ImageView
+        android:id="@+id/img_picture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/picture" />
+
+
 </LinearLayout>

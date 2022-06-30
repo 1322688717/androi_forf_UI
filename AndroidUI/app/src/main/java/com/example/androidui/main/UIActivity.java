@@ -13,8 +13,12 @@ import com.example.androidui.main.ui.CountdownActivity;
 import com.example.androidui.main.ui.DialogActivity;
 import com.example.androidui.main.ui.DrawerLayoutActivity;
 import com.example.androidui.main.ui.MediaPlayerActivity;
+import com.example.androidui.main.ui.NotableActivity;
+import com.example.androidui.main.ui.PermissionActivity;
 import com.example.androidui.main.ui.RadioButtonActivity;
 import com.example.androidui.main.ui.RcActivity;
+import com.example.androidui.main.ui.RefreshActivity;
+import com.example.androidui.main.ui.SavePictureActivity;
 import com.example.androidui.main.ui.ScrollviewActivity;
 import com.example.androidui.main.ui.SearchActivity;
 import com.example.androidui.main.ui.ThemesActivity;
@@ -50,6 +54,36 @@ public class UIActivity extends AppCompatActivity {
         binding.btnDrawerLayout.setOnClickListener(view -> btnDrawerLayout());
         binding.btnBanner.setOnClickListener(view -> btnBanner());
         binding.btnTwoRc.setOnClickListener(view -> btnTwoRc());
+        binding.btnPermission.setOnClickListener(view ->btnPermission() );
+        binding.btnSavePicture.setOnClickListener(view -> btnSavePicture());
+        binding.btnRefresh.setOnClickListener(view -> btnRefresh());
+        binding.btnNotable.setOnClickListener(view ->btnNotable() );
+    }
+
+    private void btnNotable() {
+        Intent intent = new Intent(UIActivity.this, NotableActivity.class);
+        startActivity(intent);
+    }
+
+    private void btnRefresh() {
+        Intent intent = new Intent(UIActivity.this, RefreshActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 保存到本地相册
+     */
+    private void btnSavePicture() {
+        Intent intent = new Intent(UIActivity.this, SavePictureActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 获取权限
+     */
+    private void btnPermission() {
+        Intent intent = new Intent(UIActivity.this, PermissionActivity.class);
+        startActivity(intent);
     }
 
     private void btnTwoRc() {

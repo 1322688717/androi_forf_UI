@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.androidui.R;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class EditorAdapter extends RecyclerView.Adapter<EditorAdapter.ViewHolder> {
@@ -24,10 +25,12 @@ public class EditorAdapter extends RecyclerView.Adapter<EditorAdapter.ViewHolder
     ArrayList<Integer> list_bottom = new ArrayList<>();
     TextView tv_title;
     ImageView img_head;
-    ConstraintLayout cc_editor;
+    List<Boolean> isSelects = new ArrayList<>();
+    List<ConstraintLayout> cc_editor = new ArrayList<>();
     ArrayList<String> list_title = new ArrayList<>();
     Activity activity;
     RecyclerView recyclerView;
+    int currentSelect;
     ArrayList<String> list_rc2_title = new ArrayList<>();
     ArrayList<Integer> list_rv2_imge = new ArrayList<>();
     ArrayList<Drawable> list_background = new ArrayList<>();
@@ -37,8 +40,11 @@ public class EditorAdapter extends RecyclerView.Adapter<EditorAdapter.ViewHolder
         this.activity = activity;
         this.recyclerView = recyclerView;
         initView(0);
-
+        for (int i = 0;i<list_bottom.size();i++){
+            isSelects.add(false);
+        }
     }
+
 
     @NonNull
     @Override
@@ -51,20 +57,24 @@ public class EditorAdapter extends RecyclerView.Adapter<EditorAdapter.ViewHolder
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         img_head.setImageResource(list_bottom.get(position));
         tv_title.setText(list_title.get(position));
-        cc_editor.setBackground(list_background.get(position));
+//        cc_editor.get(position).setBackground(list_background.get(position));
         Log.e("TAG","position======"+position);
-        cc_editor.setOnClickListener(new View.OnClickListener() {
+        cc_editor.get(position).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
+                Log.e("TAG",currentSelect+"");
+                cc_editor.get(currentSelect).setBackground(activity.getDrawable(R.drawable.click_fales));
+                currentSelect = position;
+                //view.findViewById(R.id.cc_editor).
                 initView(position);
-
+                cc_editor.get(position).setBackground(activity.getDrawable(R.drawable.click_true));
+//                view.setBackground(activity.getDrawable(R.drawable.click_true));
                 Log.e("TAG","position======"+position);
 
             }
         });
     }
+
 
 
     @Override
@@ -77,7 +87,7 @@ public class EditorAdapter extends RecyclerView.Adapter<EditorAdapter.ViewHolder
             super(itemView);
             tv_title = itemView.findViewById(R.id.tv_title);
             img_head = itemView.findViewById(R.id.img_head);
-            cc_editor = itemView.findViewById(R.id.cc_editor);
+            cc_editor.add(itemView.findViewById(R.id.cc_editor));
             initTitle();
         }
     }
@@ -236,14 +246,8 @@ public class EditorAdapter extends RecyclerView.Adapter<EditorAdapter.ViewHolder
         list_rc2_title.add("彩哥特油画");
 
         list_background.clear();
-        list_background.add(activity.getDrawable(R.drawable.click_fales));
+        clearSelect();
         list_background.add(activity.getDrawable(R.drawable.click_true));
-        list_background.add(activity.getDrawable(R.drawable.click_fales));
-        list_background.add(activity.getDrawable(R.drawable.click_fales));
-        list_background.add(activity.getDrawable(R.drawable.click_fales));
-        list_background.add(activity.getDrawable(R.drawable.click_fales));
-        list_background.add(activity.getDrawable(R.drawable.click_fales));
-        list_background.add(activity.getDrawable(R.drawable.click_fales));
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")
@@ -266,8 +270,12 @@ public class EditorAdapter extends RecyclerView.Adapter<EditorAdapter.ViewHolder
         list_rv2_imge.add(R.drawable.forty_age);
         list_rv2_imge.add(R.drawable.fifty_age);
         list_rv2_imge.add(R.drawable.eighty_age);
-
+        clearSelect();
         list_background.add(activity.getDrawable(R.drawable.click_true));
+    }
+
+    public void clearSelect(){
+        list_background.add(activity.getDrawable(R.drawable.click_fales));
         list_background.add(activity.getDrawable(R.drawable.click_fales));
         list_background.add(activity.getDrawable(R.drawable.click_fales));
         list_background.add(activity.getDrawable(R.drawable.click_fales));

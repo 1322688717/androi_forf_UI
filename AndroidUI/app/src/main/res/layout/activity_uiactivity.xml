@@ -8,9 +8,11 @@
     tools:context=".main.UIActivity">
 
     <ScrollView
+        android:id="@+id/scr_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
+            android:id="@+id/linear"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -114,6 +116,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="两个rc交互" />
+
+            <Button
+                android:id="@+id/btn_permission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="权限申请" />
+
+            <Button
+                android:id="@+id/btn_save_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="保存图片到本地相册" />
+
+            <Button
+                android:id="@+id/btn_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="刷新" />
+
+            <Button
+                android:id="@+id/btn_notable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="图片走马灯效果" />
 
 
         </LinearLayout>
