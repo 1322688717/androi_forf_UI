@@ -9,6 +9,7 @@ import android.widget.Toast;
 import com.example.androidui.databinding.ActivityUiactivityBinding;
 import com.example.androidui.main.ui.BannerActivity;
 import com.example.androidui.main.ui.BarActivity;
+import com.example.androidui.main.ui.ControlLengthActivity;
 import com.example.androidui.main.ui.CountdownActivity;
 import com.example.androidui.main.ui.DialogActivity;
 import com.example.androidui.main.ui.DrawerLayoutActivity;
@@ -29,9 +30,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
+
+/**
+ * UI
+ */
 public class UIActivity extends AppCompatActivity {
 
     ActivityUiactivityBinding binding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +64,12 @@ public class UIActivity extends AppCompatActivity {
         binding.btnSavePicture.setOnClickListener(view -> btnSavePicture());
         binding.btnRefresh.setOnClickListener(view -> btnRefresh());
         binding.btnNotable.setOnClickListener(view ->btnNotable() );
+        binding.btnGetLength.setOnClickListener(view -> btnGetLength());
+    }
+
+    private void btnGetLength() {
+        Intent intent = new Intent(UIActivity.this, ControlLengthActivity.class);
+        startActivity(intent);
     }
 
     private void btnNotable() {

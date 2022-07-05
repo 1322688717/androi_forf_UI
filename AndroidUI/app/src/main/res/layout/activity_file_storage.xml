@@ -5,30 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".main.business.FileStorageActivity">
 
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="填写你想要存储的内容"
+        />
 
     <Button
-        android:id="@+id/btn_business_logic"
+        android:id="@+id/btn_start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="业务逻辑" />
+        android:text="开始存储" />
 
-    <Button
-        android:id="@+id/btn_ui"
+    <TextView
+        android:id="@+id/tv_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="UI" />
+        android:text="您存储的内容是：" />
 
-    <Button
-        android:id="@+id/btn_data_structure"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="数据结构" />
 
-    <Button
-        android:id="@+id/btn_algorithm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="算法" />
 </LinearLayout>

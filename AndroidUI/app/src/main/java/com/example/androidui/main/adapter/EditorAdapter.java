@@ -29,16 +29,21 @@ public class EditorAdapter extends RecyclerView.Adapter<EditorAdapter.ViewHolder
     List<ConstraintLayout> cc_editor = new ArrayList<>();
     ArrayList<String> list_title = new ArrayList<>();
     Activity activity;
-    RecyclerView recyclerView;
+    RecyclerView recyclerView_title;
+    RecyclerView recyclerView_style;
+    LinearLayoutManager linearLayoutManager;
     int currentSelect;
     ArrayList<String> list_rc2_title = new ArrayList<>();
     ArrayList<Integer> list_rv2_imge = new ArrayList<>();
     ArrayList<Drawable> list_background = new ArrayList<>();
 
-    public EditorAdapter(ArrayList<Integer> list_bottom, Activity activity, RecyclerView recyclerView) {
+
+    public EditorAdapter(ArrayList<Integer> list_bottom, Activity activity, RecyclerView recyclerView, LinearLayoutManager linearLayoutManager,RecyclerView recyclerView_style) {
         this.list_bottom = list_bottom;
         this.activity = activity;
-        this.recyclerView = recyclerView;
+        this.recyclerView_title = recyclerView;
+        this.linearLayoutManager = linearLayoutManager;
+        this.recyclerView_style = recyclerView_style;
         initView(0);
         for (int i = 0;i<list_bottom.size();i++){
             isSelects.add(false);
@@ -71,10 +76,20 @@ public class EditorAdapter extends RecyclerView.Adapter<EditorAdapter.ViewHolder
 //                view.setBackground(activity.getDrawable(R.drawable.click_true));
                 Log.e("TAG","position======"+position);
 
+                setAutoCenter(position);
             }
         });
+
+
     }
 
+    private void setAutoCenter(int position) {
+        int firstPosition = linearLayoutManager.findFirstVisibleItemPosition();
+        int lastPosition = linearLayoutManager.findLastVisibleItemPosition();
+        int left = recyclerView_style.getChildAt(position - firstPosition).getLeft();
+        int right = recyclerView_style.getChildAt(lastPosition - position).getLeft();
+        recyclerView_style.scrollBy((left - right)/2,0);
+    }
 
 
     @Override
@@ -99,10 +114,10 @@ public class EditorAdapter extends RecyclerView.Adapter<EditorAdapter.ViewHolder
 
 
     private void initView(int position) {
-        recyclerView.setLayoutManager(new LinearLayoutManager(activity,LinearLayoutManager.HORIZONTAL,false));
+        recyclerView_title.setLayoutManager(new LinearLayoutManager(activity,LinearLayoutManager.HORIZONTAL,false));
         initRc2();
         EditorTitleAdapter editorAdapter = new EditorTitleAdapter(list_rc2_title,list_rv2_imge,activity);
-        recyclerView.setAdapter(editorAdapter);
+        recyclerView_title.setAdapter(editorAdapter);
 
         switch (position){
             case 0:

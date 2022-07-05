@@ -23,10 +23,17 @@ public class RefreshActivity extends BaseActivity {
         binding.refresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                //initData();
+                changeText();
                 binding.refresh.setRefreshing(false);
                 tip("刷新成功");
             }
         });
+    }
+
+    /**
+     * 改变文字
+     */
+    private void changeText() {
+        binding.tvText.setText("你刷新了");
     }
 }

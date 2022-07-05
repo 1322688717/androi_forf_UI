@@ -141,6 +141,12 @@
                 android:layout_height="wrap_content"
                 android:text="图片走马灯效果" />
 
+            <Button
+                android:id="@+id/btn_get_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取控件的长度宽度" />
+
 
         </LinearLayout>
     </ScrollView>

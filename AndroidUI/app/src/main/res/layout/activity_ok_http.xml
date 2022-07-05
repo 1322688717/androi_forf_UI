@@ -5,36 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".main.BusinessLogicActivity">
+    tools:context=".main.business.OkHttpActivity">
 
     <Button
-        android:id="@+id/btn_time_stamp"
+        android:id="@+id/btn_start1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="时间戳转换" />
+        android:text="开始"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <TextView
+        android:id="@+id/tv_temp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="温度" />
 
     <Button
-        android:id="@+id/btn_sp"
+        android:id="@+id/btn_start2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sp的使用"
-        android:textAllCaps="false"/>
+        android:text="开始" />
 
-    <Button
-        android:id="@+id/btn_compressed_image"
+    <TextView
+        android:id="@+id/tv_temp2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="选取本地图片" />
-
-    <Button
-        android:id="@+id/btn_okhttp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="OKhttp请求" />
-
-    <Button
-        android:id="@+id/btn_file_storage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="android内部存储" />
+        android:textSize="18sp"
+        android:text="温度" />
 </LinearLayout>

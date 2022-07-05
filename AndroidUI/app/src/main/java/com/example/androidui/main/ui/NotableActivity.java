@@ -73,15 +73,18 @@ public class NotableActivity extends AppCompatActivity {
                         }).setNegativeButton("返回", null).show();
     }
 
+    /**
+     * 暂停
+     */
     private void btnStop() {
         handler.removeCallbacks(ScrollRunnable);
     }
 
+    /**
+     * 开始
+     */
     private void btnStart() {
         handler.post(ScrollRunnable);
-
-
-
     }
 
 

@@ -32,5 +32,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="等待进度条dialog" />
+
+
+        <ProgressBar
+            android:id="@+id/progressbar_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressbar_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

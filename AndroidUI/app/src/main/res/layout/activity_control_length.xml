@@ -5,36 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".main.BusinessLogicActivity">
+    tools:context=".main.ui.ControlLengthActivity">
+
+
+    <EditText
+        android:id="@+id/tv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 
     <Button
-        android:id="@+id/btn_time_stamp"
+        android:id="@+id/btn_get"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="时间戳转换" />
+        android:text="获取editext宽高"
+        android:textAllCaps="false"
+        />
 
-    <Button
-        android:id="@+id/btn_sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="sp的使用"
-        android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/btn_compressed_image"
+    <TextView
+        android:id="@+id/tv_height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="选取本地图片" />
+        android:text="高度为：" />
 
-    <Button
-        android:id="@+id/btn_okhttp"
+    <TextView
+        android:id="@+id/tv_width"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OKhttp请求" />
-
-    <Button
-        android:id="@+id/btn_file_storage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="android内部存储" />
+        android:text="宽度为：" />
 </LinearLayout>

@@ -5,36 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".main.BusinessLogicActivity">
+    tools:context=".main.DataStructureActivity">
+
 
     <Button
-        android:id="@+id/btn_time_stamp"
+        android:id="@+id/btn_mind_mapping"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="时间戳转换" />
+        android:text="数据结构思维导图" />
 
     <Button
-        android:id="@+id/btn_sp"
+        android:id="@+id/btn_array"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sp的使用"
-        android:textAllCaps="false"/>
+        android:text="数组" />
 
     <Button
-        android:id="@+id/btn_compressed_image"
+        android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="选取本地图片" />
+        android:text="Button" />
 
     <Button
-        android:id="@+id/btn_okhttp"
+        android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OKhttp请求" />
+        android:text="Button" />
 
-    <Button
-        android:id="@+id/btn_file_storage"
+    <TextView
+        android:id="@+id/tv_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="android内部存储" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="TextView" />
 </LinearLayout>

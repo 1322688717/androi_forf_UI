@@ -81,7 +81,7 @@ public class RcActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        OKHttp.getInstance().getRequest("https://ddstar.palmmob.com/palmmob3_51/user/ListOrder?a=51&c=xiaomi&t=1655695458&u=744732&v=103&x=4b27bb1547a621f05830e1ddba962978&l=zh_CN&", new IGetDataListener() {
+        OKHttp.getInstance().getEnqueue("https://ddstar.palmmob.com/palmmob3_51/user/ListOrder?a=51&c=xiaomi&t=1655695458&u=744732&v=103&x=4b27bb1547a621f05830e1ddba962978&l=zh_CN&", new IGetDataListener() {
             @Override
             public void onSuccess(Object dataobj) {
                 Log.e("TAG",dataobj.toString());

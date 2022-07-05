@@ -8,8 +8,10 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Display;
 import android.view.Gravity;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.androidui.R;
@@ -18,16 +20,27 @@ import com.example.androidui.databinding.ActivityDialogBinding;
 public class DialogActivity extends AppCompatActivity {
 
     ActivityDialogBinding binding;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityDialogBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
+        initview();
+
+    }
+
+    private void initview() {
         binding.btnDefaultDialog.setOnClickListener(view -> btnDefaultDialog());
         binding.btnCustomDialog.setOnClickListener(view ->btnCustomDialog() );
         binding.btnProgressDialog.setOnClickListener(view -> btnProgressDialog());
+        ProgressBar progressBar1 = binding.progressbarOne;
+        ProgressBar progressBar2 = binding.progressbarTwo;
     }
+
 
     /**
      * 自定义dialog
