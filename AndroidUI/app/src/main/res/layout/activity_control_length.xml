@@ -34,4 +34,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="宽度为：" />
+
+    <Button
+        android:id="@+id/btn_get_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取屏幕的宽高" />
+
+    <TextView
+        android:id="@+id/tv_screen_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="宽高为：" />
 </LinearLayout>

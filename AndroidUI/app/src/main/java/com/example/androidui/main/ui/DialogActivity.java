@@ -6,16 +6,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.Display;
-import android.view.Gravity;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.androidui.R;
 import com.example.androidui.databinding.ActivityDialogBinding;
+import com.example.androidui.main.dialog.BottomDialogFragment2;
+import com.example.androidui.main.dialog.BotttonDialogFragment;
+import com.example.androidui.main.dialog.FullScreenFragmentDialog;
 
 public class DialogActivity extends AppCompatActivity {
 
@@ -37,8 +35,38 @@ public class DialogActivity extends AppCompatActivity {
         binding.btnDefaultDialog.setOnClickListener(view -> btnDefaultDialog());
         binding.btnCustomDialog.setOnClickListener(view ->btnCustomDialog() );
         binding.btnProgressDialog.setOnClickListener(view -> btnProgressDialog());
+        binding.btnFullscrrenFragmentDialog.setOnClickListener(view ->btnFragmentDialog() );
+        binding.btnBottonFragmentDialog.setOnClickListener(view -> btnBottonFragmentDialog());
+        binding.btnBottonFragmentDialog2.setOnClickListener(view ->btnBottonFragmentDialog2() );
         ProgressBar progressBar1 = binding.progressbarOne;
         ProgressBar progressBar2 = binding.progressbarTwo;
+    }
+
+    /**
+     * 底部导航二
+     */
+    private void btnBottonFragmentDialog2() {
+        BottomDialogFragment2 bottomDialogFragment2 = new BottomDialogFragment2(this);
+        bottomDialogFragment2.show(getSupportFragmentManager(),"bottomdialog2");
+    }
+
+
+    /**
+     * 底部dialog
+     */
+    private void btnBottonFragmentDialog() {
+        BotttonDialogFragment botttonDialogFragment = new BotttonDialogFragment();
+        botttonDialogFragment.show(getSupportFragmentManager(),"bottomDialog");
+    }
+
+
+    /**
+     * fragmnetDialog 使用方法
+     */
+    private void btnFragmentDialog() {
+        FullScreenFragmentDialog fullScreenFragmentDialog = new FullScreenFragmentDialog(this);
+        fullScreenFragmentDialog.show(getSupportFragmentManager(),"123");
+
     }
 
 

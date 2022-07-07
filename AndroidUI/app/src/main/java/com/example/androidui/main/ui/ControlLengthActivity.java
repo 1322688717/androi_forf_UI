@@ -2,7 +2,9 @@ package com.example.androidui.main.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.widget.TextView;
 
@@ -28,7 +30,17 @@ public class ControlLengthActivity extends BaseActivity {
 
     private void initview() {
         binding.btnGet.setOnClickListener(view -> btnGet());
+        binding.btnGetScreen.setOnClickListener(view -> btnGetScreen());
+    }
 
+    private void btnGetScreen() {
+        DisplayMetrics metrics = new DisplayMetrics();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            getDisplay().getRealMetrics(metrics);
+            int widthPixels = metrics.widthPixels;
+            int heightPixels = metrics.heightPixels;
+            binding.tvScreenLength.setText("宽度为 ============"+widthPixels+"         高度为=================="+heightPixels);
+        }
     }
 
     private void btnGet() {
