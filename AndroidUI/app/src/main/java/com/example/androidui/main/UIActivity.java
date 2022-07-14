@@ -15,6 +15,7 @@ import com.example.androidui.main.ui.DialogActivity;
 import com.example.androidui.main.ui.DrawerLayoutActivity;
 import com.example.androidui.main.ui.MediaPlayerActivity;
 import com.example.androidui.main.ui.NotableActivity;
+import com.example.androidui.main.ui.NotableTwoActivity;
 import com.example.androidui.main.ui.PermissionActivity;
 import com.example.androidui.main.ui.RadioButtonActivity;
 import com.example.androidui.main.ui.RcActivity;
@@ -65,6 +66,12 @@ public class UIActivity extends AppCompatActivity {
         binding.btnRefresh.setOnClickListener(view -> btnRefresh());
         binding.btnNotable.setOnClickListener(view ->btnNotable() );
         binding.btnGetLength.setOnClickListener(view -> btnGetLength());
+        binding.btnTwoNotable.setOnClickListener(view ->btnTwoNotable() );
+    }
+
+    private void btnTwoNotable() {
+        Intent intent = new Intent(UIActivity.this, NotableTwoActivity.class);
+        startActivity(intent);
     }
 
     private void btnGetLength() {

@@ -38,8 +38,16 @@ public class DialogActivity extends AppCompatActivity {
         binding.btnFullscrrenFragmentDialog.setOnClickListener(view ->btnFragmentDialog() );
         binding.btnBottonFragmentDialog.setOnClickListener(view -> btnBottonFragmentDialog());
         binding.btnBottonFragmentDialog2.setOnClickListener(view ->btnBottonFragmentDialog2() );
+        binding.btnLoadingLine.setOnClickListener(view -> btnLoadingLine());
         ProgressBar progressBar1 = binding.progressbarOne;
         ProgressBar progressBar2 = binding.progressbarTwo;
+    }
+
+    /**
+     * 直线加载进度条
+     */
+    private void btnLoadingLine() {
+
     }
 
     /**

@@ -93,7 +93,7 @@ public class NotableActivity extends AppCompatActivity {
         public void run() {
             int off = binding.linear.getMeasuredWidth() - binding.src.getWidth();
             if (off > 0) {
-                binding.src.scrollBy(1, 0);
+                binding.src.smoothScrollBy(1, 0);
                 if (binding.src.getScrollX() == off) {
                     Thread.currentThread().interrupt();
                 } else {
