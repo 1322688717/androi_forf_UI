@@ -36,5 +36,14 @@
         android:id="@+id/btn_file_storage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="android内部存储" />
+        android:text="android内部存储"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_glide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Glide的使用"
+        android:textAllCaps="false"
+        />
 </LinearLayout>

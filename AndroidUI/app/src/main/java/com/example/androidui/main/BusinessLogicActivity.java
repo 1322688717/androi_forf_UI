@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.example.androidui.main.business.CompressedImageActivity;
 import com.example.androidui.main.business.FileStorageActivity;
+import com.example.androidui.main.business.GlideActivity;
 import com.example.androidui.main.business.OkHttpActivity;
 import com.example.androidui.main.business.SPActivity;
 import com.example.androidui.main.business.TimeStampActivity;
@@ -64,6 +65,14 @@ public class BusinessLogicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(BusinessLogicActivity.this, FileStorageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.btnGlide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BusinessLogicActivity.this, GlideActivity.class);
                 startActivity(intent);
             }
         });
