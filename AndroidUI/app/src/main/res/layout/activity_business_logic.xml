@@ -46,4 +46,11 @@
         android:text="Glide的使用"
         android:textAllCaps="false"
         />
+
+    <Button
+        android:id="@+id/btn_retrofit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofit的使用"
+        android:textAllCaps="false"/>
 </LinearLayout>

@@ -13,6 +13,7 @@ import com.example.androidui.main.business.OkHttpActivity;
 import com.example.androidui.main.business.SPActivity;
 import com.example.androidui.main.business.TimeStampActivity;
 import com.example.androidui.databinding.ActivityBusinessLogicBinding;
+import com.example.androidui.main.business.retrofitActivity;
 
 public class BusinessLogicActivity extends AppCompatActivity {
 
@@ -73,6 +74,14 @@ public class BusinessLogicActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BusinessLogicActivity.this, GlideActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.btnRetrofit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BusinessLogicActivity.this, retrofitActivity.class);
                 startActivity(intent);
             }
         });

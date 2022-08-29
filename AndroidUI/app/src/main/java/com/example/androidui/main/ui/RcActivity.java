@@ -1,9 +1,11 @@
 package com.example.androidui.main.ui;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.annotation.SuppressLint;
@@ -12,6 +14,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.View;
+import android.view.animation.Animation;
 
 import com.example.androidui.R;
 import com.example.androidui.databinding.ActivityRcBinding;
@@ -78,6 +82,17 @@ public class RcActivity extends AppCompatActivity {
         binding.rcHorizontal.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.HORIZONTAL));
         RcAdapter2 adapter2 =  new RcAdapter2(RcActivity.this,photo);
         binding.rcHorizontal.setAdapter(adapter2);
+        binding.rcHorizontal.setOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+
+            @Override
+            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+            }
+        });
     }
 
     private void initData() {
