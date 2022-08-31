@@ -33,7 +33,6 @@ public class TwoRcActivity extends AppCompatActivity {
         binding = ActivityTwoRcBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
         initDate();
 
         initRcStyle();

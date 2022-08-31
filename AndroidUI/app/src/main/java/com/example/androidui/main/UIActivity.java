@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.androidui.databinding.ActivityUiactivityBinding;
 import com.example.androidui.main.ui.BannerActivity;
 import com.example.androidui.main.ui.BarActivity;
+import com.example.androidui.main.ui.BottomDialogActivity;
 import com.example.androidui.main.ui.ControlLengthActivity;
 import com.example.androidui.main.ui.CountdownActivity;
 import com.example.androidui.main.ui.DialogActivity;
@@ -67,6 +69,7 @@ public class UIActivity extends AppCompatActivity {
         binding.btnNotable.setOnClickListener(view ->btnNotable() );
         binding.btnGetLength.setOnClickListener(view -> btnGetLength());
         binding.btnTwoNotable.setOnClickListener(view ->btnTwoNotable() );
+        binding.btnBottomDialog.setOnClickListener(View ->btnBottomDialog());
     }
 
     private void btnTwoNotable() {
@@ -185,6 +188,11 @@ public class UIActivity extends AppCompatActivity {
      */
     private void Radiobutton() {
         Intent intent = new Intent(UIActivity.this, RadioButtonActivity.class);
+        startActivity(intent);
+    }
+
+    private void btnBottomDialog() {
+        Intent intent = new Intent(UIActivity.this, BottomDialogActivity.class);
         startActivity(intent);
     }
 }
