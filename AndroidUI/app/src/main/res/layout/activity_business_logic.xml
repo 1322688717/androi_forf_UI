@@ -53,4 +53,12 @@
         android:layout_height="wrap_content"
         android:text="retrofit的使用"
         android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_media_recorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MediaRecorder录音软件的使用"
+        android:textAllCaps="false"
+        />
 </LinearLayout>

@@ -9,6 +9,7 @@ import android.view.View;
 import com.example.androidui.main.business.CompressedImageActivity;
 import com.example.androidui.main.business.FileStorageActivity;
 import com.example.androidui.main.business.GlideActivity;
+import com.example.androidui.main.business.MediaRecorderActivity;
 import com.example.androidui.main.business.OkHttpActivity;
 import com.example.androidui.main.business.SPActivity;
 import com.example.androidui.main.business.TimeStampActivity;
@@ -82,6 +83,13 @@ public class BusinessLogicActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BusinessLogicActivity.this, retrofitActivity.class);
+                startActivity(intent);
+            }
+        });
+        binding.btnMediaRecorder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BusinessLogicActivity.this, MediaRecorderActivity.class);
                 startActivity(intent);
             }
         });
