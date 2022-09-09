@@ -58,6 +58,7 @@
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/drawable/member_item.xml" value="0.2905" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/drawable/selector_color.xml" value="0.2905" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/drawable/white_radius_20.xml" value="0.2905" />
+        <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_add_photos.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_algorithm.xml" value="0.35643115942028986" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_banner.xml" value="0.35643115942028986" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_bar.xml" value="0.22" />
@@ -69,11 +70,14 @@
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_retrofit.xml" value="0.3641304347826087" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_two_rc.xml" value="0.36594202898550726" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/activity_uiactivity.xml" value="0.36594202898550726" />
+        <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/add_photos_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/bottom_dialog.xml" value="0.36594202898550726" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/editor_item.xml" value="0.36594202898550726" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/editor_title_item.xml" value="0.36594202898550726" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/purchase_item.xml" value="0.36594202898550726" />
         <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/layout/state_item.xml" value="0.36594202898550726" />
+        <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2455" />
+        <entry key="..\:/Users/Windows 10/Desktop/androi_forf_UI/AndroidUI/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2455" />
       </map>
     </option>
   </component>

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.androidui.main.business.AddPhotosActivity;
 import com.example.androidui.main.business.CompressedImageActivity;
 import com.example.androidui.main.business.FileStorageActivity;
 import com.example.androidui.main.business.GlideActivity;
@@ -90,6 +91,14 @@ public class BusinessLogicActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BusinessLogicActivity.this, MediaRecorderActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.btnAddPhotos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BusinessLogicActivity.this, AddPhotosActivity.class);
                 startActivity(intent);
             }
         });

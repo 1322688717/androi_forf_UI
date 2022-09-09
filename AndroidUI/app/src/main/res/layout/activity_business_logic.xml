@@ -61,4 +61,10 @@
         android:text="MediaRecorder录音软件的使用"
         android:textAllCaps="false"
         />
+
+    <Button
+        android:id="@+id/btn_add_photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加本地照片" />
 </LinearLayout>
