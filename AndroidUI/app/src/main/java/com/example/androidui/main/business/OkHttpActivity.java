@@ -1,6 +1,8 @@
 package com.example.androidui.main.business;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 import com.example.androidui.databinding.ActivityOkHttpBinding;
 import com.example.androidui.main.base.BaseActivity;
@@ -20,6 +22,7 @@ public class OkHttpActivity extends BaseActivity {
 
     com.example.androidui.databinding.ActivityOkHttpBinding binding;
     String url = "https://devapi.qweather.com/v7/weather/now?location=101010100&key=66d721a1d6024ca8b6c257fcab036de7";
+    public static final String TAG = "zcq";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,36 @@ public class OkHttpActivity extends BaseActivity {
 
         binding.btnStart1.setOnClickListener(view ->btnStart() );
         binding.btnStart2.setOnClickListener(view -> btnStart2());
+        binding.btnPostJson.setOnClickListener(View ->PostJson());
+        binding.btnGetHead.setOnClickListener(View -> btnGetHead());
+    }
+
+    private void btnGetHead() {
+        OKHttp.getInstance().getHead(new IGetDataListener() {
+            @Override
+            public void onSuccess(Object dataobj) {
+                Log.d(TAG,"dataobj===="+dataobj);
+            }
+
+            @Override
+            public void onFailure(Object reasonOBJ) {
+                Log.d(TAG,"reasonOBJ==="+reasonOBJ);
+            }
+        });
+    }
+
+    private void PostJson() {
+        OKHttp.getInstance().postJson("anmin123", "admin123", "", "", new IGetDataListener() {
+            @Override
+            public void onSuccess(Object dataobj) {
+                Log.d(TAG,"dataobj===="+dataobj);
+            }
+
+            @Override
+            public void onFailure(Object reasonOBJ) {
+                Log.d(TAG,"reasonOBJ==="+reasonOBJ);
+            }
+        });
     }
 
     /**

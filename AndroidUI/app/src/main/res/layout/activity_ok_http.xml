@@ -34,4 +34,22 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:text="温度" />
+
+    <Button
+        android:id="@+id/btn_post_json"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="postJson请求" />
+
+    <TextView
+        android:id="@+id/tv_post_json"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btn_get_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="带请求头的get请求" />
 </LinearLayout>
