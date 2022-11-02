@@ -2,14 +2,13 @@ package com.example.androidui.main.business;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 
 import com.example.androidui.databinding.ActivityOkHttpBinding;
 import com.example.androidui.main.base.BaseActivity;
 import com.example.androidui.main.bean.HFWeather;
 import com.example.androidui.main.https.OKHttp;
 import com.example.androidui.main.listener.IGetDataListener;
-import com.example.androidui.main.untls.Logs;
+import com.example.androidui.main.utlis.Logs;
 import com.google.gson.Gson;
 
 import org.json.JSONException;

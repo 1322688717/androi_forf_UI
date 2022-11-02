@@ -2,7 +2,7 @@ package com.example.androidui.main.base;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.androidui.main.untls.Tips;
+import com.example.androidui.main.utlis.Tips;
 
 public class BaseActivity extends AppCompatActivity {
 

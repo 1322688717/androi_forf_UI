@@ -50,6 +50,14 @@ public class CompressedImageActivity extends AppCompatActivity {
     Bitmap bitmap;
     public String picpath=null;
 
+    //定义需要的权限列表
+    String[] permissions = new String[]{
+            Manifest.permission.CAMERA,
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE
+    };
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

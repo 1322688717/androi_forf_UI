@@ -8,7 +8,10 @@ import android.view.View;
 
 import com.example.androidui.main.business.AddPhotosActivity;
 import com.example.androidui.main.business.CompressedImageActivity;
+import com.example.androidui.main.business.FileActivity;
 import com.example.androidui.main.business.FileStorageActivity;
+import com.example.androidui.main.business.GetPDFActivity;
+import com.example.androidui.main.business.GetWordActivity;
 import com.example.androidui.main.business.GlideActivity;
 import com.example.androidui.main.business.MediaRecorderActivity;
 import com.example.androidui.main.business.OkHttpActivity;
@@ -102,5 +105,24 @@ public class BusinessLogicActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        binding.btnGetFile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BusinessLogicActivity.this, GetPDFActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.btnGetWord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BusinessLogicActivity.this, GetWordActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 }

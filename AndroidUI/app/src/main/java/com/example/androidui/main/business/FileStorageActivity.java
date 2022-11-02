@@ -5,12 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Environment;
 
-import com.example.androidui.R;
 import com.example.androidui.databinding.ActivityFileStorageBinding;
-import com.example.androidui.main.untls.Logs;
-import com.example.androidui.main.untls.Tips;
+import com.example.androidui.main.utlis.Logs;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

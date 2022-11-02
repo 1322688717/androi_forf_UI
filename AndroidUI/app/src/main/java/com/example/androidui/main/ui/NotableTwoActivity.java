@@ -1,6 +1,5 @@
 package com.example.androidui.main.ui;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -15,8 +14,7 @@ import android.widget.ScrollView;
 
 import com.example.androidui.R;
 import com.example.androidui.databinding.ActivityNotableTwoBinding;
-import com.example.androidui.main.untls.Logs;
-import com.example.androidui.main.untls.Tips;
+import com.example.androidui.main.utlis.Logs;
 
 import java.util.Arrays;
 

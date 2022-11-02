@@ -67,4 +67,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="添加本地照片" />
+
+    <Button
+        android:id="@+id/btn_get_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拿本地文件" />
+
+    <Button
+        android:id="@+id/btn_get_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拿本地word文件" />
 </LinearLayout>

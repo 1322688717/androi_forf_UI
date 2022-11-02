@@ -23,6 +23,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".main.business.GetWordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.business.GetPDFActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.business.FileActivity"
+            android:exported="false" />
+        <activity
             android:name=".main.business.AddPhotosActivity"
             android:exported="false" />
         <activity
