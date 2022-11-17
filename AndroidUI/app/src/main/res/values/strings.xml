@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">AndroidUI</string>
     <string name="multilingual">多语言</string>
+    <string name="item_me">item_me</string>
+    <string name="item_main">item_main</string>
+    <string name="item_home">item_home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

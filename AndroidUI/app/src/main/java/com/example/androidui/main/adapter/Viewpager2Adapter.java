@@ -22,7 +22,7 @@ public class Viewpager2Adapter extends RecyclerView.Adapter<Viewpager2Adapter.Vi
     Activity activity;
     ImageView img_banner;
 
-    public Viewpager2Adapter(ArrayList<Integer> bannerlist, Activity activity) {
+    public  Viewpager2Adapter(ArrayList<Integer> bannerlist, Activity activity) {
         this.bannerlist = bannerlist;
         this.activity = activity;
     }
