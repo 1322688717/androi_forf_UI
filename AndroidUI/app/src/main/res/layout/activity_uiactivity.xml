@@ -159,6 +159,12 @@
                 android:layout_height="wrap_content"
                 android:text="底部弹窗dialog" />
 
+            <Button
+                android:id="@+id/btn_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="navigation底部导航" />
+
 
         </LinearLayout>
     </ScrollView>

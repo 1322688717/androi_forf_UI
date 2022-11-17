@@ -16,6 +16,7 @@ import com.example.androidui.main.ui.CountdownActivity;
 import com.example.androidui.main.ui.DialogActivity;
 import com.example.androidui.main.ui.DrawerLayoutActivity;
 import com.example.androidui.main.ui.MediaPlayerActivity;
+import com.example.androidui.main.ui.NavigationActivity;
 import com.example.androidui.main.ui.NotableActivity;
 import com.example.androidui.main.ui.NotableTwoActivity;
 import com.example.androidui.main.ui.PermissionActivity;
@@ -70,6 +71,12 @@ public class UIActivity extends AppCompatActivity {
         binding.btnGetLength.setOnClickListener(view -> btnGetLength());
         binding.btnTwoNotable.setOnClickListener(view ->btnTwoNotable() );
         binding.btnBottomDialog.setOnClickListener(View ->btnBottomDialog());
+        binding.btnNavigation.setOnClickListener(view -> btnNavigation());
+    }
+
+    private void btnNavigation() {
+        Intent intent = new Intent(UIActivity.this, NavigationActivity.class);
+        startActivity(intent);
     }
 
     private void btnTwoNotable() {
