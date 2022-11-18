@@ -24,6 +24,7 @@
         app:itemIconTint="@color/selector_item_color"
         app:itemTextColor="@color/selector_item_color"
         app:menu="@menu/menu_navigation_with_view_pager"
+
         />
 
 

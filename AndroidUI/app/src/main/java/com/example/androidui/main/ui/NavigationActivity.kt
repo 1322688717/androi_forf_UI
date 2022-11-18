@@ -20,7 +20,7 @@ class NavigationActivity : AppCompatActivity() {
     private lateinit var mainFragment: MainFragment
     private lateinit var meFragment: MineFragment
     private lateinit var fragments: Array<Fragment>
-    private var mTextMessage: TextView? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,17 +41,17 @@ class NavigationActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.item_home -> {
                 replaceFragment(fragments[0], fragments[0].tag.toString())
-                mTextMessage?.text = "第1个fragment"
+
                 return@OnNavigationItemSelectedListener true
             }
             R.id.item_main -> {
                 replaceFragment(fragments[1], fragments[1].tag.toString())
-                mTextMessage?.text = "第2个fragment"
+
                 return@OnNavigationItemSelectedListener true
             }
             R.id.item_me -> {
                 replaceFragment(fragments[2], fragments[2].tag.toString())
-                mTextMessage?.text = "第3个fragment"
+
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -60,7 +60,6 @@ class NavigationActivity : AppCompatActivity() {
 
      fun initView() {
 
-//        mTextMessage = findViewById(R.id.nav_text)
         binding.bottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         homeFragment = HomeFragment()
         mainFragment = MainFragment()
