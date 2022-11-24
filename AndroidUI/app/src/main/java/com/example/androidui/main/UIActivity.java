@@ -15,6 +15,7 @@ import com.example.androidui.main.ui.ControlLengthActivity;
 import com.example.androidui.main.ui.CountdownActivity;
 import com.example.androidui.main.ui.DialogActivity;
 import com.example.androidui.main.ui.DrawerLayoutActivity;
+import com.example.androidui.main.ui.GetMusicActivity;
 import com.example.androidui.main.ui.MediaPlayerActivity;
 import com.example.androidui.main.ui.NavigationActivity;
 import com.example.androidui.main.ui.NotableActivity;
@@ -72,6 +73,12 @@ public class UIActivity extends AppCompatActivity {
         binding.btnTwoNotable.setOnClickListener(view ->btnTwoNotable() );
         binding.btnBottomDialog.setOnClickListener(View ->btnBottomDialog());
         binding.btnNavigation.setOnClickListener(view -> btnNavigation());
+        binding.btnGetMusic.setOnClickListener(view -> btnGetMusic());
+    }
+
+    private void btnGetMusic() {
+        Intent intent = new Intent(UIActivity.this, GetMusicActivity.class);
+        startActivity(intent);
     }
 
     private void btnNavigation() {

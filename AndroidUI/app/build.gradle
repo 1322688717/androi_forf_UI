@@ -26,8 +26,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    viewBinding{
-        enabled = true
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
     }
 }
 
@@ -73,6 +74,9 @@ dependencies {
 //
 //    //底部导航依赖
 //    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+
+    //mvvm架构
+    implementation 'com.github.hegaojian:JetpackMvvm:1.2.7'
 
 
 

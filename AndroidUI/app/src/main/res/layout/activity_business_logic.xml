@@ -7,76 +7,97 @@
     android:orientation="vertical"
     tools:context=".main.BusinessLogicActivity">
 
-    <Button
-        android:id="@+id/btn_time_stamp"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="时间戳转换" />
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="sp的使用"
-        android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/btn_compressed_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="选取本地图片" />
 
-    <Button
-        android:id="@+id/btn_okhttp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="OKhttp请求" />
+            <Button
+                android:id="@+id/btn_time_stamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="时间戳转换" />
 
-    <Button
-        android:id="@+id/btn_file_storage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="android内部存储"
-        android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sp的使用"
+                android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/btn_glide"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Glide的使用"
-        android:textAllCaps="false"
-        />
+            <Button
+                android:id="@+id/btn_compressed_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="选取本地图片" />
 
-    <Button
-        android:id="@+id/btn_retrofit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="retrofit的使用"
-        android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_okhttp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OKhttp请求" />
 
-    <Button
-        android:id="@+id/btn_media_recorder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MediaRecorder录音软件的使用"
-        android:textAllCaps="false"
-        />
+            <Button
+                android:id="@+id/btn_file_storage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="android内部存储"
+                android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/btn_add_photos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="添加本地照片" />
+            <Button
+                android:id="@+id/btn_glide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Glide的使用"
+                android:textAllCaps="false"
+                />
 
-    <Button
-        android:id="@+id/btn_get_file"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="拿本地文件" />
+            <Button
+                android:id="@+id/btn_retrofit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="retrofit的使用"
+                android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/btn_get_word"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="拿本地word文件" />
+            <Button
+                android:id="@+id/btn_media_recorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MediaRecorder录音软件的使用"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/btn_add_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="添加本地照片" />
+
+            <Button
+                android:id="@+id/btn_get_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="拿本地文件" />
+
+            <Button
+                android:id="@+id/btn_get_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="拿本地word文件" />
+
+            <Button
+                android:id="@+id/btn_bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取附近蓝牙数量" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

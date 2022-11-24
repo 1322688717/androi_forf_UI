@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.androidui.main.business.AddPhotosActivity;
+import com.example.androidui.main.business.BluetoothActivity;
 import com.example.androidui.main.business.CompressedImageActivity;
 import com.example.androidui.main.business.FileActivity;
 import com.example.androidui.main.business.FileStorageActivity;
@@ -122,6 +123,13 @@ public class BusinessLogicActivity extends AppCompatActivity {
             }
         });
 
+        binding.btnBluetooth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(BusinessLogicActivity.this, BluetoothActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
