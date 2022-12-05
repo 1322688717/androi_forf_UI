@@ -9,6 +9,8 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.PackageManager
+import android.net.wifi.WifiInfo
+import android.net.wifi.WifiManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -68,5 +70,45 @@ class BluetoothActivity : AppCompatActivity() {
         val filter = IntentFilter(BluetoothDevice.ACTION_FOUND)
         registerReceiver(receiver, filter)
 
+        var wifiInfo = getWifiInfo(this)
+        var sInfo = getAroundWifiDeciceInfo(this)
+
+
+    }
+
+
+    /**
+     * 获取WifiInfo
+     * @param mContext
+     * @return
+     */
+    fun getWifiInfo(mContext: Context): WifiInfo? {
+        val mWifiManager =
+            mContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
+        return mWifiManager.connectionInfo
+    }
+
+    /**
+     * 搜索到的周边WIFI信号信息
+     * @param mContext
+     * @return
+     */
+    fun getAroundWifiDeciceInfo(mContext: Context): String? {
+        val sInfo = StringBuffer()
+        val mWifiManager = mContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
+        //WifiInfo mWifiInfo = mWifiManager.getConnectionInfo();
+        val scanResults = mWifiManager.scanResults //搜索到的设备列表
+        for (scanResult in scanResults) {
+            sInfo.append(
+                """
+设备名：${scanResult.SSID} 信号强度：${scanResult.level}/n :${
+                    WifiManager.calculateSignalLevel(
+                        scanResult.level,
+                        4
+                    )
+                }"""
+            )
+        }
+        return sInfo.toString()
     }
 }
